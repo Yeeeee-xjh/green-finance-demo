@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: green-finance-demo
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m green_model.web_app_phase2
+    healthCheckPath: /health
+    envVars:
+      - key: PUBLIC_READONLY
+        value: "1"
+      - key: PYTHON_VERSION
+        value: "3.12.8"
