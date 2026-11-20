@@ -9,3 +9,5 @@ services:
     envVars:
       - key: PUBLIC_READONLY
         value: "1"
+      - key: ADMIN_PASSWORD
+        sync: false  # 密码在Render后台手动配置，不写入公开代码仓库

@@ -71,3 +71,4 @@ desktop.ini
 download_files.sh
 sanitize_db.py
 test_report.*
+.fuse*
