@@ -1,0 +1,12 @@
+# All paths are relative to the green_model project root unless explicitly overridden.
+project_root: .
+case_storage: agent_cases
+upload_dir: runtime_uploads
+report_output: reports
+green_catalog: loan_review/data/catalog_entries_2025_full.json
+transition_rules: agent/rule_packs/transition_rules.json
+policy_sources: ../data_policy
+bert_multitask_model: models/green_multitask
+bge_model: models/bge
+demo_data_dir: loan_review/data/public_cases_2023_2025/projects
+

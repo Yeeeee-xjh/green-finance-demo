@@ -1,0 +1,73 @@
+# Python 运行环境
+.venv/
+venv/
+.runtime/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# 临时与日志文件
+*.pid
+*.log
+web_app_stdout.log
+web_app_stderr.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# 本地浏览器测试配置
+.playwright/
+selenium-profile/
+
+# 本地上传与真实客户材料
+green_model/data/uploads/
+green_model/data/reports/
+!green_model/data/phase1/.gitkeep
+!green_model/data/phase1/green_finance_phase1.sqlite3
+
+# 数据库备份与未脱敏库
+*.sqlite3.bak
+*.sqlite3.old
+*_backup.sqlite3
+*_original.sqlite3
+green_finance_phase1_public.sqlite3
+
+# 报告临时文件
+report_tmp/
+*.pdf.tmp
+
+# 历史QA截图与归档大目录
+archive/
+qa_screenshots/
+historical_assets/
+
+# 密钥与环境变量
+.env
+.env.*
+*.key
+*.pem
+secrets/
+tokens/
+
+# 大模型权重，禁止普通Git提交
+bert_model/
+*.bin
+*.safetensors
+*.pt
+*.pth
+model_weights/
+checkpoints/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 部署临时文件
+download_files.sh
+sanitize_db.py
+test_report.*
