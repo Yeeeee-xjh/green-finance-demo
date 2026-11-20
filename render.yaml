@@ -9,5 +9,3 @@ services:
     envVars:
       - key: PUBLIC_READONLY
         value: "1"
-      - key: PYTHON_VERSION
-        value: "3.12.8"
